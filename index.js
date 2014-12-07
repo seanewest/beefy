@@ -69,6 +69,7 @@ function beefy(opts, ready) {
 
     genOpts.handler.entries = fixupEntries(opts.entries)
     genOpts.handler.log = opts.quiet ? false : genOpts.handler.log
+    genOpts.handler.title = opts.title;
     innerHandler = createHandler(genOpts.handler, io, opts.unhandled)
   })
 
